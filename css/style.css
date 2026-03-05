@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: relative;
+    color: #E2E8F0;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.hero {
+    grid-area: heroarea;
+    min-width: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h3 {
+    color: #A78BFA;
+}
+
+
+
+.hero * {}
+
+.aboutme {
+    grid-area: aboutmearea;
+    height: 40vh;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.aboutme p {
+    font-size: 16px;
+    width: 400px;
+}
+
+.skill-grid {
+    grid-area: skillsarea;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* border: solid white 1px; */
+    text-align: center;
+    align-self: center;
+}
+
+.skill-grid * {
+    /* border: solid white 1px; */
+}
+
+.skill-card {
+    width: 120px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects {
+    grid-area: projectsarea;
+    min-width: 50vh;
+    /* border: solid white 1px; */
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    padding: 3%;
+    gap: 10px;
+}
+
+.projects a[id="vermas"] {
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    /* Lo "empuja" de vuelta la mitad de su propio ancho */
+    color: aliceblue;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin: 5px;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+    width: 30%;
+    height: 50%;
+}
+
+
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.project-card p {
+    font-size: 10px;
+}
+
+.projects * {
+    /* border: solid rgb(34, 144, 158) 1px; */
+
+}
+
+.contact {
+    grid-area: contactarea;
+    min-width: 50vh;
+    display: flex;
+    text-align: center;
+    /* border: 1px white solid; */
+    justify-content: center;
+    padding: 10%;
+}
+
+.contact h2,
+.contacto {
+    margin: 10px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.contact-links i {
+    padding: 0;
+    margin: 0;
+}
+
+.contact * {
+    /* border: 1px white solid; */
+
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-grid {
+    display: grid;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    /* border: 1px red solid; */
+    grid-template-columns: 1fr minmax(auto, 900px) 1fr;
+    grid-template-rows: repeat(5, 100vh);
+    grid-template-areas:
+        'heroarea heroarea heroarea '
+        '. aboutmearea .'
+        '. skillsarea .'
+        '. projectsarea .'
+        '. contactarea .'
+    ;
+}
+
+.menu {
+    position: fixed;
+    z-index: 3;
+    /* border: solid rgb(34, 144, 158) 1px; */
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.menu * {
+    /* border: solid rgb(34, 144, 158) 1px; */
+
+}

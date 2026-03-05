@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- importamos libreria de particulas -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/utils.js"></script>
+    <title>Welcome!</title>
+</head>
+
+<body>
+    <!-- div que contendra las partculas en todo la hoja -->
+    <div id="particles-js"></div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#boutme">Sobre mi</a></li>
+            <li><a href="#skill-container">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container-grid">
+
+        <div class="hero" id="hero">
+            <h1>Hola!</h1>
+            <h3>Soy Brayan</h3>
+            <p>
+                Estoy especializandome en el desarollo web!
+            </p>
+        </div>
+
+        <div class="aboutme fade-in scroll" id="boutme">
+            <h2>Sobre mi</h2>
+
+            <p>
+                Soy recien egresado de la universidad autonoma metropolitana, como licenciado en computacion
+                no tengo por el momento experiencia laboral en el sector TECH, pero eso no me a detendio a mejorarme
+                y a mantenerme actualizado sobre las tecnologias que se usan para el desarollo web.
+            </p>
+        </div>
+        <div id="skill-container" class="skill-grid fade-in scroll">
+            <!-- esto se llena con utils.js -->
+        </div>
+
+        <div class="projects scroll" id="proyectos">
+            <div class="project-card fade-in">
+                <img src="assets/img/image.png" alt="">
+                <h4>videojuego</h4>
+                <div class="proyecto-lenguaje">
+                    <span>
+                        <i class="devicon-csharp-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-unity-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-git-plain"></i>
+                    </span>
+                </div>
+                <p>El proyecto se desarrollo en unity, es estilo Metroidvania y se anadio un sistema de inventarios</p>
+            </div>
+            <div class="project-card fade-in">
+                <img src="assets/img/Coleccion-geometria-negativa.png" alt="">
+                <h4>ProyectoTerminal</h4>
+                <div class="proyecto-lenguaje">
+                    <span>
+                        <i class="devicon-csharp-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-unity-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-git-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-fastapi-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-docker-plain"></i>
+                    </span>
+                </div>
+                <p>Se implemento un NPC con una arquitectura RAG, montado localmente y conexion entre contenedores</p>
+            </div>
+
+            <div class="project-card fade-in">
+                <!-- <img src="" alt="Proximamente"> -->
+                <h4>Proximamante</h4>
+                <div class="proyecto-lenguaje">
+                    <!-- <span>
+                        <i class="devicon-css3-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-html5-plain"></i>
+                    </span>
+                    <span>
+                        <i class="devicon-javascript-plain"></i>
+                    </span> -->
+                </div>
+                <p></p>
+            </div>
+
+            <a href="" id="vermas">ver mas</a>
+        </div>
+
+        <div class="contact scroll" id="contacto">
+
+            <div class="contacto fade-in">
+                <h2>Contactame</h2>
+                <p>Vamos a conocernos entre nosotros, o solo enviame un mensaje</p>
+
+                <p>si quieres tener un contact mas directo, enviame mensaje</p>
+
+                <ul>
+                    <li><a href="mailto:" brayanangelcast@gmail.com"">brayanangelcast@gmail.com</a></li>
+                </ul>
+
+                <div class="contact-links">
+                    <a href="">
+                        <i class="devicon-linkedin-plain" style="font-size: 30px;""></i>
+                    </a>
+                    <a href="">
+                        <i class=" devicon-github-original" style="font-size: 30px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
