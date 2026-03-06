@@ -237,7 +237,7 @@ ul {
     .container-grid {
         width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 80vh);
+        grid-template-rows: auto;
         grid-template-areas:
             'heroarea'
             'aboutmearea'
@@ -256,7 +256,6 @@ ul {
 
     body * {
         border: #E2E8F0 solid 1px;
-        box-sizing: border-box;
     }
 
     .hero,
@@ -264,16 +263,11 @@ ul {
     .aboutme,
     .projects,
     .contact {
-        width: 50%;
+        min-width: 50%;
     }
 
-
-    p {
-        width: 50%;
-    }
-
-    .hero {
-        align-self: center;
+    .project-card {
+        width: 100%;
     }
 
     .aboutme {
@@ -281,10 +275,12 @@ ul {
         flex-direction: column;
     }
 
-    .aboutme p {
-        width: 100%;
+    .projects a[id="vermas"] {
+        display: none;
     }
 
-
+    .contact {
+        padding: 1%;
+    }
 
 }
