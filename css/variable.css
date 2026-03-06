@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+    /* tablet */
+}
+
+@media (max-width: 768px) {
+
+    /* móvil */
+    .container-grid {
+        grid-template-columns: 1fr;
+
+    }
+}
