@@ -217,5 +217,74 @@ ul {
 
 .menu * {
     /* border: solid rgb(34, 144, 158) 1px; */
+}
+
+.btn-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    /* tablet */
+}
+
+@media (max-width: 768px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    /* móvil */
+    .container-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 80vh);
+        grid-template-areas:
+            'heroarea'
+            'aboutmearea'
+            'skillsarea'
+            'projectsarea'
+            'contactarea'
+        ;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* bolita menu de opciones */
+    .btn-menu {}
+
+    body * {
+        border: #E2E8F0 solid 1px;
+        box-sizing: border-box;
+    }
+
+    .hero,
+    .skill-grid,
+    .aboutme,
+    .projects,
+    .contact {
+        width: 50%;
+    }
+
+
+    p {
+        width: 50%;
+    }
+
+    .hero {
+        align-self: center;
+    }
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme p {
+        width: 100%;
+    }
+
+
 
 }
