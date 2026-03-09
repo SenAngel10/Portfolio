@@ -106,49 +106,129 @@
 .proyecto-lenguaje .devicon-csharp-plain:hover {
     color: rgba(8, 93, 159);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(8, 93, 159);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-docker-plain:hover {
     color: rgba(11, 157, 199);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(11, 157, 199);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-unity-plain:hover {
     color: rgba(76, 76, 76);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(76, 76, 76);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-fastapi-plain:hover {
     color: rgba(13, 156, 143);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(13, 156, 143);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-git-plain:hover {
     color: rgba(240, 86, 57);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(240, 86, 57);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-javascript-plain:hover {
     color: rgba(253, 217, 66);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(253, 217, 66);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-html5-plain:hover {
     color: rgba(241, 106, 48);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(241, 106, 48);
+    transition: 0.3s;
+
 }
 
 .proyecto-lenguaje .devicon-css3-plain:hover {
     color: rgba(48, 106, 241);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(48, 106, 241);
+    transition: 0.3s;
+
 }
 
 .contact-links .devicon-linkedin-plain:hover {
     color: rgba(0, 118, 178);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(0, 118, 178);
+    transition: 0.3s;
+
 }
 
 .contact-links .devicon-github-original:hover {
     color: rgba(8, 8, 8);
     text-shadow: 0 0 10px #E2E8F0, 0 0 10px rgba(8, 8, 8);
+    transition: 0.3s;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form>label>input,
+form>label>textarea {
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #E2E8F0;
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    border-radius: 10px;
+}
+
+form>label>input::placeholder,
+form>label>textarea::placeholder {
+    color: rgba(255, 255, 255, 0.438);
+}
+
+form>label>input:focus,
+form>label>textarea:focus {
+    border-color: #8d70be;
+    outline: none;
+    transition: 0.3s;
+
+
+}
+
+form>label>textarea {
+    height: 200px;
+}
+
+form>button {
+    width: 25%;
+    height: 30px;
+
+    align-self: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: #E2E8F0;
+
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+form>button:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #8b9ffa;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: rgba(226, 232, 240, 0.4);
+    margin-top: 10px;
+    border-top: 1px solid rgba(167, 139, 250, 0.15);
 }

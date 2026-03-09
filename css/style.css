@@ -238,7 +238,7 @@ ul {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 100px;
+        row-gap: 200px;
         grid-template-areas:
             'heroarea'
             'aboutmearea'
@@ -264,7 +264,7 @@ ul {
     .aboutme,
     .projects,
     .contact {
-        min-width: 50%;
+        min-height: unset;
     }
 
     .project-card {
@@ -272,8 +272,15 @@ ul {
     }
 
     .aboutme {
+        padding: 2rem 1rem;
+        height: auto;
         display: flex;
         flex-direction: column;
+    }
+
+    .aboutme p {
+        width: 100%;
+        /* en desktop tiene width: 400px fijo */
     }
 
     .projects a[id="vermas"] {
@@ -282,6 +289,22 @@ ul {
 
     .contact {
         padding: 1%;
+        height: 600px;
     }
 
+    .contacto {
+        margin: 0;
+    }
+
+    .contacto.fade-in {
+        animation: none;
+        animation-timeline: auto;
+        opacity: 1;
+        transform: none;
+
+    }
+
+    form {
+        font-size: 17px;
+    }
 }
