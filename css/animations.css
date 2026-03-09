@@ -200,11 +200,11 @@ form>label>textarea:focus {
     outline: none;
     transition: 0.3s;
 
-
 }
 
 form>label>textarea {
     height: 200px;
+    resize: none;
 }
 
 form>button {

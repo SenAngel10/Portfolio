@@ -235,6 +235,7 @@ ul {
 
     /* móvil */
     .container-grid {
+        margin-top: 200px;
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
